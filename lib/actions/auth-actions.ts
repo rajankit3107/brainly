@@ -1,6 +1,5 @@
 "use server";
 
-import { email } from "better-auth";
 import { auth } from "../auth";
 import { headers } from "next/headers";
 
