@@ -33,7 +33,7 @@ export default function SignupPage() {
         );
       } else {
         // Success - redirect will happen via callbackURL
-        router.push("/dashboard");
+        router.push("/");
       }
     } catch (error) {
       setError(
@@ -47,13 +47,13 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="h-screen flex flex-col bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 overflow-hidden">
+    <div className="h-screen flex flex-col bg-linear-to-br from-indigo-50 via-purple-50 to-pink-50 overflow-hidden">
       {/* Navigation */}
       <nav className="border-b border-gray-200 backdrop-blur-sm bg-white/90 shrink-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
+              <div className="w-8 h-8 bg-linear-to-br from-indigo-600 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
                 <svg
                   className="w-4 h-4 text-white"
                   fill="none"
@@ -68,7 +68,7 @@ export default function SignupPage() {
                   />
                 </svg>
               </div>
-              <span className="text-base font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="text-base font-bold bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 Better-Auth
               </span>
             </div>
@@ -79,7 +79,7 @@ export default function SignupPage() {
               <button className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
                 Features
               </button>
-              <button className="px-3 py-1.5 text-sm bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-200">
+              <button className="px-3 py-1.5 text-sm bg-linear-to-r from-indigo-600 to-purple-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-200">
                 Dashboard
               </button>
               <button className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
@@ -300,7 +300,7 @@ export default function SignupPage() {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 mt-4 text-sm disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  className="w-full py-2.5 bg-linear-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 mt-4 text-sm disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
                   {isLoading ? "Creating Account..." : "Create Account"}
                 </button>
